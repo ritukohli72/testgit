@@ -1,0 +1,152 @@
+
+Ritu@dell-PC MINGW64 ~
+$ node
+>
+(To exit, press ^C again or type .exit)
+>
+
+Ritu@dell-PC MINGW64 ~
+$ node -v
+v7.9.0
+
+Ritu@dell-PC MINGW64 ~
+$ npm -v
+4.2.0
+
+Ritu@dell-PC MINGW64 ~
+$
+
+Ritu@dell-PC MINGW64 ~
+$
+
+Ritu@dell-PC MINGW64 ~
+$ cd
+
+Ritu@dell-PC MINGW64 ~
+$ cd C:\Users\Ritu\Documents
+bash: cd: C:UsersRituDocuments: No such file or directory
+
+Ritu@dell-PC MINGW64 ~
+$ dir
+AppData            My\ Documents                                                                                 ntuser.ini
+Application\ Data  NetHood                                                                                       Pictures
+Contacts           NTUSER.DAT                                                                                    PrintHood
+Cookies            ntuser.dat.LOG1                                                                               Recent
+Desktop            ntuser.dat.LOG2                                                                               Saved\ Games
+Documents          NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf                                       Searches
+Downloads          NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms  SendTo
+Favorites          NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms  Start\ Menu
+Links              NTUSER.DAT{1e5d1aaf-1814-11e7-86ff-180373ace836}.TM.blf                                       Templates
+Local\ Settings    NTUSER.DAT{1e5d1aaf-1814-11e7-86ff-180373ace836}.TMContainer00000000000000000001.regtrans-ms  Tracing
+Music              NTUSER.DAT{1e5d1aaf-1814-11e7-86ff-180373ace836}.TMContainer00000000000000000002.regtrans-ms  Videos
+
+Ritu@dell-PC MINGW64 ~
+$ cd documents
+
+Ritu@dell-PC MINGW64 ~/documents
+$ dir
+desktop.ini  git  My\ Music  My\ Pictures  My\ Videos  Traffic\ Sources.docx
+
+Ritu@dell-PC MINGW64 ~/documents
+$ cd git
+
+Ritu@dell-PC MINGW64 ~/documents/git
+$ git config --global user.name "ritukohli72"
+
+Ritu@dell-PC MINGW64 ~/documents/git
+$ git config --global user.email ritukohli72@gmail.com
+
+Ritu@dell-PC MINGW64 ~/documents/git
+$ git clone https://github.com/ritukohli72/testgit.git
+Cloning into 'testgit'...
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+
+Ritu@dell-PC MINGW64 ~/documents/git
+$ dir
+testgit
+
+Ritu@dell-PC MINGW64 ~/documents/git
+$ cd testgit
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ dir
+README.md  test.txt
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ dir
+helloworld.docx  README.md  test.txt
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git add helloworld.docs
+fatal: pathspec 'helloworld.docs' did not match any files
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git add helloworld.docx
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   helloworld.docx
+
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git commit -m "next file added" helloworld.docx
+[master eb7b2c5] next file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 helloworld.docx
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git push -u origin master
+Username for 'https://github.com': ritukohli72
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ritukohli72/testgit.git
+   21cac86..eb7b2c5  master -> master
+Branch master set up to track remote branch master from origin.
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   helloworld.docx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ~$lloworld.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git commit -m "file edited" helloworld.docx
+[master 4b735e2] file edited
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$ git push -u origin master
+Username for 'https://github.com': ritukohli72
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 7.49 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ritukohli72/testgit.git
+   eb7b2c5..4b735e2  master -> master
+Branch master set up to track remote branch master from origin.
+
+Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
+$
