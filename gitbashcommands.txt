@@ -149,4 +149,5 @@ To https://github.com/ritukohli72/testgit.git
 Branch master set up to track remote branch master from origin.
 
 Ritu@dell-PC MINGW64 ~/documents/git/testgit (master)
-$
+$ git fetch origin 
+$ git merge origin/master
